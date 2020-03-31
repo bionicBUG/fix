@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# This fix script is now on git!
+# You can see and/or clone it from the link below.
+# https://ghnou.su/gitea/ghnou/fix
+
 echo "Fixing the system..."
 
 # Some of the fixes are so advanced that they had to go proprietary
