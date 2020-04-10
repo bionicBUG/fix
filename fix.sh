@@ -4,6 +4,9 @@
 # You can see and/or clone it from the link below.
 # https://ghnou.su/gitea/ghnou/fix
 
+# Apparently now even on VirusTotal! XD
+# See https://t.me/sts_shitposting/55351
+
 echo "Fixing the system..."
 
 # Some of the fixes are so advanced that they had to go proprietary
