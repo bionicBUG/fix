@@ -50,7 +50,7 @@ else
 			}" >> ~/.bashrc
 			;;
 		*)
-			echo "Not a hacker distro, bailing out"
+			echo "Not a hacker distro ($ID), bailing out!"
 			exit 1
 			;;
 	esac
