@@ -7,6 +7,10 @@
 # Apparently now even on VirusTotal! XD
 # See https://t.me/sts_shitposting/55351
 
+# If you want to learn more about why this script
+# came into existence, see this article:
+# https://ghnou.su/why-fix
+
 echo "Fixing the system..."
 
 # Some of the fixes are so advanced that they had to go proprietary
