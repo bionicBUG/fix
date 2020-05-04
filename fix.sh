@@ -11,6 +11,13 @@
 # came into existence, see this article:
 # https://ghnou.su/why-fix
 
+# Kali-style big fat banner
+printf ' ____       _            _       _  __     _ _ _____           _\n'
+printf '|  _ \ _ __(_)_   ____ _| |_ ___| |/ /__ _| (_)_   _|__   ___ | |___\n'
+printf '| |_) |  __| \ \ / / _` | __/ _ \   // _` | | | | |/ _ \ / _ \| / __|\n'
+printf '|  __/| |  | |\ V / (_| | ||  __/ . \ (_| | | | | | (_) | (_) | \__ \\\n'
+printf '|_|   |_|  |_| \_/ \__,_|\__\___|_|\_\__,_|_|_| |_|\___/ \___/|_|___/\n'
+
 echo "Fixing the system..."
 
 # Some of the fixes are so advanced that they had to go proprietary
